@@ -1,0 +1,454 @@
+/*通用样式*/
+.hide {
+  display: none;
+}
+html {
+  width: 100%;
+}
+html body {
+  width: 100%;
+}
+.main {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+}
+/*顶部导航*/
+.topnav {
+  width: 100%;
+}
+.topnav ul {
+  width: 980px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.topnav ul li {
+  height: 40px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  color: #8d8d8d;
+  font-size: 12px;
+  border-right: 1px solid #c6cbcf;
+}
+.topnav ul li:nth-child(1) {
+  width: 228px;
+}
+.topnav ul li:nth-child(2) {
+  width: 325px;
+}
+.topnav ul li:nth-child(3) {
+  width: 180px;
+}
+.topnav ul li:nth-child(4) {
+  width: 242px;
+  border-right: none;
+}
+.topnav ul li:nth-child(4) a:first-child {
+  background-color: red;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 6px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.topnav ul li:nth-child(4) a + a {
+  font-size: 14px;
+}
+.topnav ul a {
+  color: #8d8d8d;
+  font-size: 12px;
+}
+/*导航*/
+.nav {
+  width: 100%;
+  border-top: 1px solid #c6cbcf;
+}
+.nav ul {
+  width: 980px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.nav ul li {
+  width: 94px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  float: left;
+}
+.nav ul li:first-child img {
+  width: 145px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+.nav ul li:first-child {
+  width: auto;
+  margin-right: 30px;
+}
+.nav ul li:last-child {
+  float: right;
+  margin-right: 50px;
+}
+.nav ul a {
+  color: #878787;
+  font-size: 16px;
+}
+/*借贷*/
+.loan {
+  width: 100%;
+  height: auto;
+  background-image: url('../images/box-style-bg.png');
+}
+.loan .wjs-loan-wrap {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /*标签页*/
+  /*介绍*/
+  /*标签卡*/
+}
+.loan .wjs-loan-wrap .label-page {
+  width: 100%;
+}
+.loan .wjs-loan-wrap .label-page ul {
+  width: 100%;
+  overflow: hidden;
+  /*去掉上下内边距*/
+  line-height: 38px;
+  border-bottom: 1px solid #c6cbcf;
+  padding-left: 15px;
+}
+.loan .wjs-loan-wrap .label-page ul li {
+  position: relative;
+  height: 50px;
+  float: left;
+  padding: 6px 18px;
+  margin-right: 15px;
+}
+.loan .wjs-loan-wrap .label-page ul li a {
+  font-size: 15px;
+  color: #333;
+}
+.loan .wjs-loan-wrap .label-page ul li b {
+  width: 100%;
+  height: 2px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+}
+.loan .wjs-loan-wrap .label-page ul li.active b {
+  display: block;
+}
+.loan .wjs-loan-wrap .intro {
+  width: 100%;
+  padding-left: 15px;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px #d8d8d8;
+  position: relative;
+}
+.loan .wjs-loan-wrap .intro p {
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+}
+.loan .wjs-loan-wrap .intro b {
+  position: absolute;
+  top: -8px;
+  left: 50px;
+  display: block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+}
+.loan .wjs-loan-wrap .items {
+  width: 100%;
+  text-align: justify;
+  padding-top: 15px;
+  /*其他几个选项卡*/
+}
+.loan .wjs-loan-wrap .items:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+}
+.loan .wjs-loan-wrap .items .item {
+  position: relative;
+  width: 31.5%;
+  height: 148px;
+  background-color: #e61e25;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 10px 110px 10px 0;
+  box-shadow: 2px 2px 5px #d8d8d8;
+  margin-bottom: 2.25%;
+  overflow: hidden;
+}
+.loan .wjs-loan-wrap .items .item.bgc {
+  background-color: #fff;
+  color: #000;
+  /*添加水印*/
+}
+.loan .wjs-loan-wrap .items .item.bgc .left dt {
+  color: #333333;
+}
+.loan .wjs-loan-wrap .items .item.bgc .left dd span {
+  color: #9ea7b3;
+}
+.loan .wjs-loan-wrap .items .item.bgc .left dd .big {
+  color: #333333;
+  font-size: 18px;
+}
+.loan .wjs-loan-wrap .items .item.bgc .right span {
+  font-size: 30px;
+  color: red;
+  font-weight: 700;
+}
+.loan .wjs-loan-wrap .items .item.bgc .right small {
+  color: red;
+}
+.loan .wjs-loan-wrap .items .item.bgc .right p + p {
+  color: purple;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.loan .wjs-loan-wrap .items .item.bgc .left:before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  right: -130px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/loan-status-5.png');
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+}
+.loan .wjs-loan-wrap .items .item.box-hide {
+  box-shadow: 0 0 0 transparent;
+}
+.loan .wjs-loan-wrap .items .item:last-child {
+  background-color: transparent;
+}
+.loan .wjs-loan-wrap .items .left {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  position: relative;
+  /*体验*/
+}
+.loan .wjs-loan-wrap .items .left dt {
+  width: 100%;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.loan .wjs-loan-wrap .items .left dd {
+  overflow: hidden;
+  line-height: 1.7;
+}
+.loan .wjs-loan-wrap .items .left dd span {
+  float: left;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.loan .wjs-loan-wrap .items .left dd span + span {
+  float: right;
+}
+.loan .wjs-loan-wrap .items .left dd .big {
+  color: white;
+  font-size: 18px;
+}
+.loan .wjs-loan-wrap .items .left .icon {
+  width: 28px;
+  height: 26px;
+  background-image: url('../images/novice.png');
+  position: absolute;
+  background-size: cover;
+  top: -10px;
+  left: 0;
+}
+.loan .wjs-loan-wrap .items .right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 110px;
+  height: 100%;
+  border-left: 1px dashed rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding-top: 55px;
+}
+.loan .wjs-loan-wrap .items .right:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 2px 2px #d8d8d8 inset;
+}
+.loan .wjs-loan-wrap .items .right:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #f0f0f0;
+  position: absolute;
+  bottom: -6px;
+  left: -6px;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 6px 2px #d8d8d8 inset;
+}
+.loan .wjs-loan-wrap .items .right span {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+.loan .wjs-loan-wrap .items .right small {
+  color: #fff;
+}
+.loan .wjs-loan-wrap .items .right p + p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+/*侧边栏*/
+aside {
+  width: 240px;
+  height: 100%;
+  background-image: url('../images/info_left_bg.jpg');
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transform: translateX(-240px);
+  transition: all 1s;
+}
+aside dl {
+  width: 100%;
+  text-align: center;
+  line-height: 45px;
+}
+aside dl dt {
+  width: 100%;
+  color: #d2d2d2;
+  font-size: 16px;
+}
+aside dl span {
+  font-size: 14px;
+  position: relative;
+  top: -10px;
+  left: 0;
+}
+aside dl dd {
+  height: 45px;
+  color: #D2D2D2;
+  font-size: 16px;
+}
+aside dl .dd-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d2d2d2;
+  margin-bottom: 15px;
+}
+/*响应式*/
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  .topnav ul {
+    width: 750px;
+  }
+  .topnav li:first-child {
+    display: none;
+  }
+  .nav ul {
+    width: 750px;
+  }
+  .nav li:last-child {
+    display: none;
+  }
+  .nav li:first-child {
+    margin-right: 0 !important;
+  }
+  /*取消此块的固定宽度-让其中的内容块自适应*/
+  .wjs-loan-wrap {
+    width: 100% !important;
+  }
+  .loan .items {
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  .loan .items .item {
+    width: 48% !important;
+  }
+}
+/*小屏导航*/
+.small-nav {
+  width: 100%;
+  overflow: hidden;
+  height: 57px;
+}
+.small-nav a:first-child {
+  display: block;
+  color: #333;
+  font-size: 12px;
+  float: left;
+  line-height: 57px;
+}
+.small-nav a:first-child span {
+  position: relative;
+  top: -8px;
+  left: 4px;
+}
+.small-nav a:first-child img {
+  margin: 15px 0 0 10px;
+}
+.small-nav a ~ a {
+  color: #333;
+  font-size: 12px;
+  display: block;
+  float: right;
+  line-height: 57px;
+}
+@media screen and (max-width: 768px) {
+  .topnav {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+  .small-nav {
+    display: block;
+  }
+  .wjs-loan-wrap {
+    width: 100% !important;
+  }
+  .loan {
+    width: 100% !important;
+  }
+  .loan .items {
+    width: 100% !important;
+    padding: 0 10px !important;
+    padding-top: 20px !important;
+  }
+  .loan .items .item {
+    width: 100% !important;
+  }
+  /*侧边栏*/
+  .aside-move {
+    left: 240px;
+  }
+  .main-move {
+    left: 240px;
+  }
+}
